@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let produs={
+            nume: 'Paine',
+            pret: 8,
+            stoc: 25,
+            dataFabricarii: new Date(2022,2,22),
+            afiseaza : function(){
+                console.log(`Produsul ${produs.nume} costa ${produs.pret} in stoc sunt ${produs.stoc}`)
+            },
+            cumpara : function(){
+                if(produs.stoc>0){produs.stoc -= 1;
+                console.log(`Produsul ${produs.nume} a fost adaugat in cos` )
+             }
+        }
+
+    }
+    produs.afiseaza();
+    produs.cumpara();
+    console.log(produs.nume)
+    </script>
+</body>
+</html>
