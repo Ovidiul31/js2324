@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operatii cu Array</h1>
+    <p>Array-uri cum adaugam la sfarsit</p>
+    <script>
+        const ourNames=['Paul','Ion','Dan','Adi'];
+        ourNames.push('Mihai','Ana');
+        ourNames.unshift('Mariana','Evelina');
+        console.log(ourNames.sort(function(a,b){
+                return (b.length-a.length) || (a - b);
+
+        }))
+        // console.log(ourNames);
+        // let newArr = ourNames.slice(2,5)
+        // console.log(newArr)         
+    </script>
+</body>
+</html>

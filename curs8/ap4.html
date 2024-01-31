@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        myArr=[
+            [1,5,11,7],
+            [2,10,12,4],
+            [9,6,3,8]
+        ];
+        // console.log(myArr);
+        // let newArr=[];
+        for (const i of myArr) {
+            let temp=(i.sort(function(a,b){
+                return a-b;
+            }))
+            newArr.push(i);
+        }
+        
+    </script>
+</body>
+</html>
